@@ -1,0 +1,9 @@
+---
+- name: Configure user and SSH settings
+  hosts: server_1
+  become: yes
+  roles:
+    - role: ./role/server_1
+  vars:
+    target_user: "newuser"
+    ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUM6aNzo3UAhraTuiewMT8vcfhUZ1PCRKIZV0sLRxaMABvbhbiWE+CnCVsq7t5TMSlBP0EWqEF71Uy+R8Dtcb0+3ETkN3tXDw6QsH1u0/7KqmunK+rbdZS11G+gL6DBwekERKFvDPaT3viDMZlDfZEcoFMCcLbGQpIsZu4qIKpdzXWKRZ0y+OvO3gydtMnlo4wXivlXr17gom5zAO8qujP/AebzNa6NX5VOiaO8s8jF85iYQV/keEndrwsQ2C3817r/UoTIirBzGownH73m8Jb3DinICK50IJJcgOz/R1TyNStbh2FEQiVLxQsFwKiRLYG2TaxBtspG/VQ1WxRWELNyznWzwaU2hVhZt4aJJzrAVZLjV70nzhbAlW2WKWCL0g0xPmZmjYynVBQmV1E8mEep3Q7CIINN8vcEsbZ6pdAhRcEpvqMty4D8XivICd8387cWolgCUhAtI2sUmLhm5pY79GLJuvdUuI1NK8XcVfEYMlvquvGMUS/FIrQEcqNwRc= manh-ansible"      
